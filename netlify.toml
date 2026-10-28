@@ -1,0 +1,11 @@
+[images]
+  remote_images = ["https://res.cloudinary.com/.*"]
+
+[[redirects]]
+  from = "/_next/image"
+  to = "/.netlify/images?url=:url&w=:width&q=:quality"
+  status = 200
+  [redirects.query]
+    url = ":url"
+    w = ":width"
+    q = ":quality"
